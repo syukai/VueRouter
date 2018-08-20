@@ -6,7 +6,16 @@ const Bar = { template: '<div>bar</div>' }
 
 // 
 const User = {
-  template: '<div>User {{ $route.params.id }}!</div>'
+  template: '<div>User {{ $route.params.id }}!</div>',
+  // watch: {
+  //   '$route' (to, from) {
+  //     alert('change from ' + from.path + ' to ' + to.path);
+  //   }
+  // }
+  beforeRouteUpdate(to, from, next){
+    alert('change from ' + from.path + ' to ' + to.path + '!!');
+    next();
+  }
 }
 
 // 2. ルートをいくつか定義します
