@@ -16,6 +16,7 @@ const User = {
       <router-view></router-view>
     </div>
   `,
+
   // watch: {
   //   '$route' (to, from) {
   //     alert('change from ' + from.path + ' to ' + to.path);
@@ -37,6 +38,11 @@ const routes = [
   { path: '/bar', component: Bar },
   { path: '/user/:id', component: User,
     children: [
+      // 公式ドキュメントではこのchildルートが無いと
+      // "/user/foo"のときUserアウトレットで何も描画されないとなっているが描画されるっぽい
+      // {
+      //   path:'',component:{template:`<span>nothing</span>`}
+      // },
       {
         // /user/:id/profile がマッチした時に
         // UserProfile は User の <router-view> 内部で描画されます
