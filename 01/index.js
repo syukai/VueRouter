@@ -13,6 +13,7 @@ const User = {
       <h2>User {{ $route.params.id }}</h2>
       <router-link to="/user/mike/profile">profile</router-link>
       <router-link to='/user/mike/posts'>posts</router-link>
+      <button @click='$router.push("/user/mike/profile")'>ボタンで移動</button>
       <router-view></router-view>
     </div>
   `,
