@@ -14,10 +14,22 @@ const User = {
       <router-link to="/user/mike/profile">profile</router-link>
       <router-link to='/user/mike/posts'>posts</router-link>
       <button @click='$router.push("/user/mike/profile")'>ボタンで移動</button>
+      <div>
+        nameでリンク<br />
+        <button @click='toUser("mike")'>mike</button>
+        <button @click='toUser("sally")'>sally</button>
+      </div>
       <router-view></router-view>
     </div>
   `,
-
+  methods:{
+    mike(){
+      this.$router.push({name: 'userroute', params:{id:'mike'}});
+    },
+    toUser(name){
+      this.$router.push({name: 'userroute', params:{id:name}});
+    }
+  },
   // watch: {
   //   '$route' (to, from) {
   //     alert('change from ' + from.path + ' to ' + to.path);
@@ -35,9 +47,9 @@ const User = {
 // またはコンポーネントオプションのオブジェクトでも構いません。
 // ネストされたルートに関しては後で説明します
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar },
-  { path: '/user/:id', component: User,
+  { path: '/foo', name: 'fooroute', component: Foo },
+  { path: '/bar', name: 'barroute', component: Bar },
+  { path: '/user/:id', name: 'userroute', component: User,
     children: [
       // 公式ドキュメントではこのchildルートが無いと
       // "/user/foo"のときUserアウトレットで何も描画されないとなっているが描画されるっぽい
