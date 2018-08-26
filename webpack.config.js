@@ -1,6 +1,7 @@
 // const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
+  mode:'development',
 	entry: 
 		// "foo/entry":"./entry.js",
 		// "bar/hello":"./hello.js",
