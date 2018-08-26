@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./02/App.vue":
+/*!********************!*\
+  !*** ./02/App.vue ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !!../node_modules/vue-loader/lib/selector?type=script&index=0!./App.vue */ \"./node_modules/vue-loader/lib/selector.js?type=script&index=0!./02/App.vue\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e477d82_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/template-compiler/index?{\"id\":\"data-v-2e477d82\",\"hasScoped\":false,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!../node_modules/vue-loader/lib/selector?type=template&index=0!./App.vue */ \"./node_modules/vue-loader/lib/template-compiler/index.js?{\\\"id\\\":\\\"data-v-2e477d82\\\",\\\"hasScoped\\\":false,\\\"optionsId\\\":\\\"0\\\",\\\"buble\\\":{\\\"transforms\\\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./02/App.vue\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_component_normalizer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/vue-loader/lib/runtime/component-normalizer */ \"./node_modules/vue-loader/lib/runtime/component-normalizer.js\");\nvar disposed = false\n/* script */\n\n\n/* template */\n\n/* template functional */\nvar __vue_template_functional__ = false\n/* styles */\nvar __vue_styles__ = null\n/* scopeId */\nvar __vue_scopeId__ = null\n/* moduleIdentifier (server only) */\nvar __vue_module_identifier__ = null\n\nvar Component = Object(_node_modules_vue_loader_lib_runtime_component_normalizer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e477d82_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"render\"],\n  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e477d82_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__WEBPACK_IMPORTED_MODULE_1__[\"staticRenderFns\"],\n  __vue_template_functional__,\n  __vue_styles__,\n  __vue_scopeId__,\n  __vue_module_identifier__\n)\nComponent.options.__file = \"02/App.vue\"\n\n/* hot reload */\nif (false) {}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Component.exports);\n\n\n//# sourceURL=webpack:///./02/App.vue?");
+
+/***/ }),
+
 /***/ "./02/components/user.vue":
 /*!********************************!*\
   !*** ./02/components/user.vue ***!
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\n/* harmony import */ var _routes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes.js */ \"./02/routes.js\");\n\n\n\n// import App from './App.vue'\n\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nconst router = new vue_router__WEBPACK_IMPORTED_MODULE_1__[\"default\"]({\n        routes: _routes_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n    });\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n    el: '#app', // アプリをマウントする要素\n    // components: { App }, // Appというコンポーネントを使うよ、という宣言\n    router: router\n});\n\nconsole.log(\"index.js running!\");\n\n\n//# sourceURL=webpack:///./02/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\n/* harmony import */ var _routes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes.js */ \"./02/routes.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.vue */ \"./02/App.vue\");\n\n\n\n\n\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nconst router = new vue_router__WEBPACK_IMPORTED_MODULE_1__[\"default\"]({\n        routes: _routes_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n    });\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n    el: '#app', // アプリをマウントする要素\n    render: h=>(_App_vue__WEBPACK_IMPORTED_MODULE_3__[\"default\"]),\n    // template: '<App/>',\n    // components:{App},\n    router: router\n});\n\nconsole.log(\"index.js running!\");\n\n\n//# sourceURL=webpack:///./02/index.js?");
 
 /***/ }),
 
@@ -167,6 +179,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/selector.js?type=script&index=0!./02/App.vue":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/selector.js?type=script&index=0!./02/App.vue ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\tcreated(){\n\t\tconsole.log(\"App.created.\");\n\t},\n\tmounted(){\n\t\tconsole.log(\"App.mounted.\")\n\t},\n  methods:{\n    toUser(name){\n      this.$router.push({name: 'userroute', params:{id:name}});\n    }\n\t}\n});\n\n\n//# sourceURL=webpack:///./02/App.vue?./node_modules/vue-loader/lib/selector.js?type=script&index=0");
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/selector.js?type=script&index=0!./02/components/user.vue":
 /*!**********************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/selector.js?type=script&index=0!./02/components/user.vue ***!
@@ -176,6 +200,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\tcreated(){\n\t\tconsole.log(\"user.vue created.\");\n\t},\n  methods: {\n\t\ttoUser(name){\n\t\t\tconsole.log(\"toUser running.\");\n      this.$router.push({name: 'userroute', params:{id:name}});\n    }\n  },\n  // watch: {\n  //   '$route' (to, from) {\n  //     alert('change from ' + from.path + ' to ' + to.path);\n  //   }\n  // }\n  beforeRouteUpdate(to, from, next){\n\t\tconsole.log(\"user.vue beforeRouteUpdate.\");\n    alert('change from ' + from.path + ' to ' + to.path + '!!');\n    next();\n  }\n});\n\n\n//# sourceURL=webpack:///./02/components/user.vue?./node_modules/vue-loader/lib/selector.js?type=script&index=0");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-2e477d82\",\"hasScoped\":false,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./02/App.vue":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2e477d82","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./02/App.vue ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    { staticClass: \"user\", attrs: { id: \"app\" } },\n    [\n      _c(\"h2\", [_vm._v(\"User \" + _vm._s(_vm.$route.params.id))]),\n      _vm._v(\" \"),\n      _c(\n        \"router-link\",\n        { attrs: { to: \"/user/\" + _vm.$route.params.id + \"/profile\" } },\n        [_vm._v(\"profile\")]\n      ),\n      _vm._v(\" \"),\n      _c(\n        \"router-link\",\n        { attrs: { to: \"/user/\" + _vm.$route.params.id + \"/posts\" } },\n        [_vm._v(\"posts\")]\n      ),\n      _vm._v(\" \"),\n      _c(\n        \"button\",\n        {\n          on: {\n            click: function($event) {\n              _vm.$router.push(\"/user/\" + _vm.$route.params.id + \"/profile\")\n            }\n          }\n        },\n        [_vm._v(\"ボタンで移動\")]\n      ),\n      _vm._v(\" \"),\n      _c(\"router-view\")\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\nif (false) {}\n\n//# sourceURL=webpack:///./02/App.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-2e477d82%22,%22hasScoped%22:false,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0");
 
 /***/ }),
 
