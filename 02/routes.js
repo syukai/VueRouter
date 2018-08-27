@@ -7,13 +7,25 @@ const Bar = { template: '<div>bar</div>' }
 
 const UserProfile = {template: '<div>show Profile</div>'}
 const UserPosts = {template: '<div>post papers</div>'}
-// 
-console.log("routes.js running.");
+
+// console.log("routes.js running.");
 
 export default [
 	// { path: '/' , name: 'user', component: User},
-	{ path: '/foo', name: 'fooroute', component: Foo },
-	{ path: '/bar', name: 'barroute', component: Bar },
+	{ path: '/foo'
+		, name: 'fooroute'	// 名前付きルート
+		// 名前付きビューにそれぞれ表示する
+		, components:{
+				default: Foo 
+			, invalid: Bar}
+	},
+	{ path: '/bar'
+	, name: 'barroute'		//名前付きルート
+		// 名前付きビューにそれぞれ表示する
+		, components: {
+			default: Bar
+			,invalid: Foo}
+	},
 	{ path: '/user/:id', name: 'userroute', component: User,
 		children: [
 			// 公式ドキュメントではこのchildルートが無いと
@@ -33,5 +45,21 @@ export default [
 				path: 'posts',
 				component: UserPosts
 			}
-		] }
+		] 
+	},
+	{
+		path: '/hoge', redirect:'/foo'
+	},
+	{
+		path: '/fuga', redirect: {name:'barroute'}
+	},
+	{
+		path: '/ore', redirect: to=>{
+			const { hash, params, query } = to;
+			console.log("hash is " + hash);
+			console.log("params is " + params);
+			console.log("query is "+ query);
+			return 'foo';
+		}
+	}
 ]

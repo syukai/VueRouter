@@ -10,10 +10,10 @@ const router = new VueRouter({
 
 new Vue({
     el: '#app', // アプリをマウントする要素
-    render: h=>(App),
-    // template: '<App/>',
-    // components:{App},
+    // render: h=>(App),    // renderではうまくいかない。（描画されない）
+    template: '<App/>',
+    components:{App},
     router: router
 });
 
-console.log("index.js running!");
+// console.log("index.js running!");
