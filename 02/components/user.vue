@@ -1,6 +1,7 @@
 <template>
 	<div class="user">
 		<div>
+			現在のユーザー{{id}}
 			nameでリンク<br />
 			<button @click="toUser('mike')">mike</button>
 			<button @click="toUser('sally')">sally</button>
@@ -13,6 +14,7 @@ export default {
 	created(){
 		// console.log("user.vue created.");
 	},
+	props: ['id'],
   methods: {
 		/**
 		 * 名前付きルートを使ってルート遷移

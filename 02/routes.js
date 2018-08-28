@@ -27,6 +27,7 @@ export default [
 			,invalid: Foo}
 	},
 	{ path: '/user/:id', name: 'userroute', component: User,
+		props: true,		// Booleanモードのプロパティ $router.paramsがプロパティとなる
 		children: [
 			// 公式ドキュメントではこのchildルートが無いと
 			// "/user/foo"のときUserアウトレットで何も描画されないとなっているが描画されるっぽい
@@ -48,7 +49,9 @@ export default [
 		] 
 	},
 	{
-		path: '/hoge', redirect:'/foo'
+		// hogeでアクセスしたらfooにリダイレクトする。
+		// hogehogeでアクセスしたらURLはhogehogeのままだが中身はfooにリダイレクトされてる
+		path: '/hoge', redirect:'/foo', alias:'/hogehoge'
 	},
 	{
 		path: '/fuga', redirect: {name:'barroute'}
@@ -57,8 +60,8 @@ export default [
 		path: '/ore', redirect: to=>{
 			const { hash, params, query } = to;
 			console.log("hash is " + hash);
-			console.log("params is " + params);
-			console.log("query is "+ query);
+			console.log("params is " + JSON.stringify(params));
+			console.log("query is "+ JSON.stringify(query));
 			return 'foo';
 		}
 	}
