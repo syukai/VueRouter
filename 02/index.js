@@ -8,6 +8,17 @@ const router = new VueRouter({
         routes
     });
 
+router.beforeResolve((to, from, next) => {
+    console.log(to);
+    console.log(from);
+    if(to.name==="userroute" && to.params.id==="mike"){
+        console.log("route block!!");
+        next(false);
+    }else{
+        next();
+    }
+  });
+
 new Vue({
     el: '#app', // アプリをマウントする要素
     // render: h=>(App),    // renderではうまくいかない。（描画されない）
