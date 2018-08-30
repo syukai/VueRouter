@@ -9,8 +9,8 @@ const router = new VueRouter({
     });
 
 router.beforeResolve((to, from, next) => {
-    console.log(to);
-    console.log(from);
+    // console.log(to);
+    // console.log(from);
     if(to.name==="userroute" && to.params.id==="mike"){
         console.log("route block!!");
         next(false);

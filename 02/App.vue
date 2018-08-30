@@ -1,11 +1,19 @@
 <template>
 	<div id="app" class="user">
 		<h2>User {{ $route.params.id }}</h2>
-		<router-link :to="'/user/' + $route.params.id + '/profile'">profile</router-link>
-		<router-link :to="'/user/' + $route.params.id + '/posts'">posts</router-link>
+		<transition>
+			<router-link :to="'/user/' + $route.params.id + '/profile'">profile</router-link>
+		</transition>
+		<transition>
+			<router-link :to="'/user/' + $route.params.id + '/posts'">posts</router-link>
+		</transition>
 		<button @click="$router.push('/user/' + $route.params.id + '/profile')">ボタンで移動</button>
-		<router-view></router-view>
-		<router-view name="invalid" style="background-color:#888"></router-view>
+		<transition>
+			<router-view></router-view>
+		</transition>
+		<transition>
+			<router-view name="invalid" style="background-color:#888"></router-view>
+		</transition>
 	</div>    
 </template>
 
